@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head><title>Daily Quote</title></head>
+  <body>
+    <h1>🌟 Daily Quote</h1>
+    <p id="quote">Loading quote...</p>
+    <script>
+      const quotes = [
+        "You miss 100% of the shots you don’t take. – Wayne Gretzky",
+        "Stay hungry, stay foolish. – Steve Jobs",
+        "Believe you can and you're halfway there. – Theodore Roosevelt"
+      ];
+      document.getElementById("quote").innerText =
+        quotes[Math.floor(Math.random() * quotes.length)];
+    </script>
+  </body>
+</html>
